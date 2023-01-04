@@ -1,0 +1,497 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+*{
+	box-sizing: border-box;
+}
+.container{
+	width: 100%;
+	display: block;
+	max-width: 1440px;
+	padding: 0px 35px;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	display: block;
+	padding: 20px 0 0;
+}
+header .conteudo{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+header .conteudo .logo{
+	width: auto;
+	max-width: 62px;
+}
+header .conteudo .logo img{
+	width: 100%;
+	display: block;
+}
+header .conteudo .menu{
+	width: max-content;
+}
+header .conteudo .menu ul{
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}
+header .conteudo .menu ul li{
+	width: max-content;
+	margin-left: 55px;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Roboto'
+}
+header .conteudo .menu ul li a{
+	text-decoration: none;
+	color: black;
+}
+.banner{
+	width: 100%;
+	display: block;
+}
+.banner .conteudo{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.banner .conteudo .texto{
+	width: 45%;
+	padding: 0px 0px 0px 5%;
+	display: block;
+}
+.banner .conteudo .texto h1{
+	width: 100%;
+	display: block;
+	position: relative;
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 52px;
+	text-transform: uppercase;
+	line-height: 1.4;
+}
+.banner .conteudo .texto h1:after{
+	width: calc(100% - 110px);
+	height: 4px;
+	background-color: black;
+	position: absolute;
+	content: ' ';
+	bottom: 18px;
+	right: 0px;
+}
+.banner .conteudo .texto h2{
+	width: 100%;
+	display: block;
+	position: relative;
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 36px;
+	text-transform: uppercase;
+	line-height: 1.4;
+}
+.banner .conteudo .texto h3{
+	width: 100%;
+	display: block;
+	position: relative;
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 24px;
+	text-transform: uppercase;
+	line-height: 1.4;
+}
+.banner .conteudo .texto .botoes{
+	width: 100%;
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 15px;
+}
+.banner .conteudo .texto .botoes .btn{
+	width: max-content;
+	padding: 0px 45px;
+	border: 1px solid #000;
+	border-radius: 30px;
+	margin-right: 25px;
+	line-height: 50px;
+	height: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	color: black;
+	font-size: 14px;
+}
+.banner .conteudo .img{
+	width: 46%;
+}
+.banner .conteudo .img img{
+	width: 100%;
+}
+.quem-sou-eu{
+	width: 100%;
+	display: block;
+	padding-bottom: 40px
+}
+.quem-sou-eu .conteudo{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.quem-sou-eu .conteudo .img{
+	width: 46%;
+}
+.quem-sou-eu .conteudo .img img{
+	width: 100%;
+}
+.quem-sou-eu .conteudo .texto{
+	width: 45%;
+	display: block;
+}
+.quem-sou-eu .conteudo .texto h2{
+	width: 100%;
+	display: block;
+	position: relative;
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 52px;
+	text-transform: uppercase;
+	line-height: 1.4;
+	margin-bottom: 25px;
+}
+.quem-sou-eu .conteudo .texto .descricao{
+	width: 100%;
+	display: block;
+}
+.quem-sou-eu .conteudo .texto .descricao p{
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 1.3;
+}
+.quem-sou-eu .conteudo .texto .descricao .redes-sociais{
+	width: 100%;
+	display: block;
+}
+.quem-sou-eu .conteudo .texto .descricao .redes-sociais ul{
+	width: max-content;
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.quem-sou-eu .conteudo .texto .descricao .redes-sociais ul li{
+	margin-right: 10px;
+}
+.quem-sou-eu .conteudo .texto .descricao .redes-sociais ul li a{
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #000;
+	border-radius: 50%;
+	text-decoration: none;
+}
+.quem-sou-eu .conteudo .texto .descricao .redes-sociais ul li a i{
+	font-size: 25px;
+	color: black;
+}
+.servicos{
+	width: 100%;
+	display: block;
+	padding: 110px 0px;
+	background-color: black;
+}
+.servicos .conteudo{
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.servicos .conteudo h2{
+	width: 100%;
+	display: block;
+	position: relative;
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 52px;
+	text-transform: uppercase;
+	line-height: 1.4;
+	margin-bottom: 25px;
+	color: white;
+	text-align: center;
+}
+.servicos .conteudo .descricao{
+	width: 100%;
+	display: block;
+}
+.servicos .conteudo .descricao p{
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 1.3;
+	color: white;
+	text-align: center;
+}
+.servicos .conteudo .itens{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: stretch;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 25px;
+}
+.servicos .conteudo .itens .item{
+	width: 22%;
+	border-radius: 10px;
+	border: 1px solid white;
+	padding: 15px 20px;
+}
+.servicos .conteudo .itens .item .titulo{
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-bottom: 15px;
+}
+.servicos .conteudo .itens .item .titulo i{
+	color: white;
+	font-size: 25px;
+	margin-right: 10px;
+}
+.servicos .conteudo .itens .item .titulo h3{
+	width: max-content;
+	display: block;
+	font-family: 'Roboto';
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 1.3;
+	color: white;
+	text-align: center;
+}
+.servicos .conteudo .itens .item .descricao{
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 1.3;
+	color: white;
+	text-align: center;
+}
+.projetos{
+	width: 100%;
+	display: block;
+	padding: 110px 0;
+}
+.projetos .conteudo{
+	width: 100%;
+	display: block;
+}
+.projetos .conteudo h2{
+	width: 100%;
+	display: block;
+	position: relative;
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 52px;
+	text-transform: uppercase;
+	line-height: 1.4;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.projetos .conteudo .itens{
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: stretch;
+	flex-wrap: wrap;
+	flex-direction: row;
+	position: relative;
+}
+.projetos .conteudo .itens .item{
+	width: 100%;
+	position: relative;
+	padding: 10px;
+	cursor: pointer;
+}
+.projetos .conteudo .itens .item .hover{
+	position: absolute;
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	background-color: gray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 25px;
+	left: 10px;
+	top: 10px;
+	transition: .30s;
+	opacity: 0;
+	visibility: hidden;
+}
+.projetos .conteudo .itens .item:hover .hover{
+	opacity: 1;
+	visibility: visible;
+}
+.projetos .conteudo .itens .item .hover i{
+	font-size: 25px;
+	color: white;
+}
+.projetos .conteudo .itens .item img{
+	width: 100%;
+	border-radius: 25px;
+}
+.projetos .conteudo .itens .slick-arrow{
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+	font-size: 25px;
+}
+.projetos .conteudo .itens .slick-arrow.arrow-left{
+	left: -25px;
+}
+.projetos .conteudo .itens .slick-arrow.arrow-right{
+	right: -25px;
+}
+footer{
+	width: 100%;
+	display: block;
+	padding: 90px 0;
+	background-color: #eeeeee;
+}
+footer .conteudo{
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+footer .conteudo .logo{
+	width: 120px;
+	display: block;
+	margin-bottom: 20px;
+}
+footer .conteudo .logo img{
+	width: 100%;
+	display: block;
+}
+footer .conteudo .logo p{
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 5px;
+}
+footer .conteudo .redes-sociais{
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+}
+footer .conteudo .redes-sociais ul{
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+footer .conteudo .redes-sociais ul li{
+	margin-right: 10px;
+}
+footer .conteudo .redes-sociais ul li a{
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #000;
+	border-radius: 50%;
+	text-decoration: none;
+}
+footer .conteudo .redes-sociais ul li a i{
+	font-size: 25px;
+	color: black;
+}
+footer .conteudo a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 16px;
+}

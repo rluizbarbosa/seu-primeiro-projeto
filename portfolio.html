@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfólio Examplo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.projetos .conteudo .itens').slick({
+				infinite: true,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				prevArrow: '<a class="slick-arrow arrow-left"><i class="fas fa-arrow-left"></i></a>',
+				nextArrow: '<a class="slick-arrow arrow-right"><i class="fas fa-arrow-right"></i></a>'
+			});
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="conteudo">
+				<div class="logo">
+					<img src="logo.png">
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#quem-sou-eu">Quem sou eu</a></li>
+						<li><a href="#servicos">Serviços</a></li>
+						<li><a href="#projetos">Projetos</a></li>
+						<li><a href="#contatos">Contatos</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="banner">
+		<div class="container">
+			<div class="conteudo">
+				<div class="texto">
+					<h1>Olá</h1>
+					<h2>Sou o Rodrigo Barbosa</h2>
+					<h3>Programador Web Full Stack</h3>
+					<div class="botoes">
+						<a href="#contatos" class="btn">Contatos</a>
+						<a href="#projetos" class="btn">Projetos Realizados</a>
+					</div>
+				</div>
+				<div class="img">
+					<img src="imagem1.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="quem-sou-eu" id="quem-sou-eu">
+		<div class="container">
+			<div class="conteudo">
+				<div class="img">
+					<img src="imagem2.png">
+				</div>
+				<div class="texto">
+					<h2>Quem Sou Eu</h2>
+					<div class="descricao">
+						<p>Olá visitante, meu nome é Rodrigo Barbosa. É um grande prazer em recebe-lo aqui em meu site.</p>
+						<p>Sou formado em Análise e Desenvolvimento de Sistemas pela universidade Moura Lacerda (Ribeirão Preto) e sou apaixonado pelo programação de sistemas Web e Aplicativos.</p>
+						<p>Também sou filho de mãe solteira e faxineira, e meu objetivo primário quando comecei a estudar programação era ajudar minha mãe com as despesas de casa, e hoje em dia consigo sustentar e dar uma boa qualidade de vida para minha família.</p>
+						<p>Encontrei na programação, não apenas uma profissão, mais uma paixão, e que compartilho nas redes sociais os meus conhecimentos para novos programadores.</p>
+						<p>Me siga em:</p>
+						<div class="redes-sociais">
+							<ul>
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="servicos" id="servicos">
+		<div class="container">
+			<div class="conteudo">
+				<h2>Serviços</h2>
+				<div class="descricao">
+					<p>Conheça os meus principais serviços</p>
+				</div>
+				<div class="itens">
+					<div class="item">
+						<div class="titulo">
+							<i class="fas fa-mobile-screen"></i>
+							<h3>Desenvolvimento App</h3>
+						</div>
+						<div class="descricao">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+					<div class="item">
+						<div class="titulo">
+							<i class="fas fa-computer"></i>
+							<h3>Desenvolvimento Web</h3>
+						</div>
+						<div class="descricao">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+					<div class="item">
+						<div class="titulo">
+							<i class="far fa-lightbulb"></i>
+							<h3>Consultorias</h3>
+						</div>
+						<div class="descricao">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="projetos" id="projetos">
+		<div class="container">
+			<div class="conteudo">
+				<h2>Projetos Realizados</h2>
+				<div class="itens">
+					<div class="item">
+						<div class="hover">
+							<i class="fas fa-eye"></i>
+						</div>
+						<img src="imagem3.png">
+					</div>
+					<div class="item">
+						<div class="hover">
+							<i class="fas fa-eye"></i>
+						</div>
+						<img src="imagem3.png">
+					</div>
+					<div class="item">
+						<div class="hover">
+							<i class="fas fa-eye"></i>
+						</div>
+						<img src="imagem3.png">
+					</div>
+					<div class="item">
+						<div class="hover">
+							<i class="fas fa-eye"></i>
+						</div>
+						<img src="imagem3.png">
+					</div>
+					<div class="item">
+						<div class="hover">
+							<i class="fas fa-eye"></i>
+						</div>
+						<img src="imagem3.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="contatos">
+		<div class="container">
+			<div class="conteudo">
+				<div class="logo">
+					<img src="logo.png">
+					<p>Examplo</p>
+				</div>
+				<div class="redes-sociais">
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+					</ul>
+				</div>
+				<a href="mailto:contato@examplo.com.br">contato@examplo.com.br</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
